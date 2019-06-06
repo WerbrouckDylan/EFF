@@ -11,12 +11,15 @@
 <body>
 
     <nav class="navbar navbar-default navbar-static-top">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar">
             <li>
-                <a class = "navbar-brand" href="{% url 'EFF:employees' %}">employees</a>
+                <a clas="navbar-brand" href="{% url 'admin:index' %}">Admin</a>
             </li>
             <li>
-                <a clas="navbar-link" href="{% url 'admin:index' %}">Admin</a>
+                <a class = "nav-link" href="{% url 'EFF:index' %}">home</a>
+            </li>
+            <li>
+                <a class = "nav-link" href="{% url 'EFF:employees' %}">employees</a>
             </li>
             <li>
                 <a href="#"></a>

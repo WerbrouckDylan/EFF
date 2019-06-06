@@ -8,3 +8,4 @@ class IndexView(TemplateView):
 
 class EmployeeListView(ListView):
     template_name ='EFF/Employees.html'
+    model = models.werknemers
