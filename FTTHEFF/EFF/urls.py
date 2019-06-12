@@ -7,4 +7,6 @@ app_name = 'EFF'
 urlpatterns = [
     path('', views.IndexView.as_view(), name = 'index'),
     url(r'^employees/$',views.EmployeeListView.as_view(),name='employees'),
+    url(r'^employees/create/$',views.EmployeeCreateView.as_view(),name='createEmployee'),
+    
 ]

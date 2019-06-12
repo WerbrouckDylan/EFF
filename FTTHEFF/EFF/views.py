@@ -7,5 +7,11 @@ class IndexView(TemplateView):
     template_name = 'EFF/index.html'
 
 class EmployeeListView(ListView):
+    context_object_name = 'employeeView'
     template_name ='EFF/Employees.html'
-    model = models.werknemers
+    model = models.werknemer
+
+class EmployeeCreateView(CreateView):
+    template_name = 'EFF/createEmployee.html'
+    fields = ('personeelsnummer','naam','voornaam','skills','functie')
+    model = models.werknemer
