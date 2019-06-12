@@ -15,3 +15,4 @@ class EmployeeCreateView(CreateView):
     template_name = 'EFF/createEmployee.html'
     fields = ('personeelsnummer','naam','voornaam','skills','functie')
     model = models.werknemer
+    
